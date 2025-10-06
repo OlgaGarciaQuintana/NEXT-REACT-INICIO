@@ -45,6 +45,17 @@ async function saluda2({nombre, edad}:{nombre:string, edad?:number}){
 saluda(person.apellido);
 saluda2(person);
 
-console.log("Fin");
+async function sleep(label: string) {
+    await setTimeout(() => console.log("El label es: ", label), 3000);
+    return "terminó";
+}
+
+function muestra(mensaje:string){
+    console.log("El mensaje es", mensaje);
+}
+
+//sleep("Valor label").then((a) => {muestra(a); console.log("Fin"); return})
+
+
 
 //async //await
