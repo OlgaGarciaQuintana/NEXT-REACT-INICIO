@@ -1,5 +1,5 @@
 import React from 'react';
-import logoHeader from "@/public/react-core-concepts.png";
+import logoHeader from "@/public/images/react-core-concepts.png";
 import Image from 'next/image';
 
 export default function header() {
