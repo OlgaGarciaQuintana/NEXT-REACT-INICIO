@@ -5,6 +5,7 @@ import configImg from "@/public/config.png";
 import jsxUiImg from "@/public/jsx-ui.png";
 import reactCoreImg from "@/public/react-core-concepts.png";
 import stateImg from "@/public/state-mgmt.png";
+import { CORE_CONCEPTS } from '@/public/data';
 
 export default function CoreConceptsList() {
   return (
