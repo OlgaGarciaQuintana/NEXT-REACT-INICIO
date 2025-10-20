@@ -10,6 +10,7 @@ export default function Home() {
        <Header />
        <nav className="flex flex-col md:flex-row bg-violet-900 justify-center md:justify-between">
           <Dropdown menuText="Hola"/>
+           <Dropdown menuText="Adiós"/>
        </nav>
       <CoreConceptsList/>
       <TabExampleSection/>
