@@ -20,27 +20,15 @@ export default function TabExampleSection() {
         <TabButton isSelected={selected === "state"} onClick={() => handleClick("state")}>{EXAMPLES.state.title}</TabButton>
       </div>
       {
+        //Seccion que muestra cuando no hay nada seleccionado
         !selected && <p className="text-slate-200 p-3">Selecciona un ejemplo para ver el código</p>
       }
       {
+        //Seccion que muestra cuando selected tiene el elemento seleccionado
         !!selected &&
-        <div className="bg-slate-600 text-slate-200 p-12 m-3">
-          <h3 className="mb-10 text-lg">
-            {EXAMPLES[selected].title}
-          </h3>
-          <p className="mb-10">
-            {EXAMPLES[selected].description}
-          </p>
-          <hr/>
-          <pre className="mt-3 overflow-hidden">
-            <code>
-              {EXAMPLES[selected].code}
-            </code>
-          </pre>
-        </div>
-      }
+        <TabExample objeto={EXAMPLES[selected]}/>
 
-      <TabExample/>
+      }
     </section>
   )
 }
