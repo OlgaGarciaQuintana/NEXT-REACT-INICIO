@@ -24,7 +24,7 @@ export default function TabExampleSection() {
         !selected && <p className="text-slate-200 p-3">Selecciona un ejemplo para ver el código</p>
       }
       {
-        //Seccion que muestra cuando selected tiene el elemento seleccionado
+        //Seccion que muestra cuando selected tiene un ele seleccionado
         !!selected &&
         <TabExample objeto={EXAMPLES[selected]}/>
 
