@@ -5,8 +5,8 @@ import Link from 'next/link';
 
 const list = [
     {href: "/",label:"Home"},
-    {href: "/prueba1",label:"Prueba 1"},
-    {href: "/prueba2",label:"Prueba 2"}
+    {href: "/prueba1",label:"Properties"},
+    {href: "/prueba2",label:"Add Property"}
 ]
 
 export default function Dropdown({menuText}:{menuText: string}) {
